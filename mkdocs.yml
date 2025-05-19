@@ -1,16 +1,15 @@
 site_name: JukaboxDocs
+
 nav:
   - Home: index.md
-  - Getting started: getting-started.md
+  - Getting Started: getting-started.md
   - Setup: setup.md
-  - Maintanance: maintanance.md
-  - Our future: our-future.md
-
-repo_url: https://github.com/Chugani05-JesusLugo2002/Jukabox
-repo_name: Jukabox
+  - Maintenance: maintanance.md
+  - Our Future: our-future.md
 
 theme:
   name: material
+  language: en
   palette:
     - scheme: default
       primary: teal
@@ -35,11 +34,31 @@ theme:
     - search.share
     - content.code.annotate
     - content.code.copy
-  language: en
+
+repo_url: https://github.com/Chugani05-JesusLugo2002/Jukabox
+repo_name: Jukabox
 
 plugins:
   - search
   - offline
+  - i18n:
+      docs_structure: folder
+      default_language: en
+      languages:
+        - locale: en 
+          name: English
+          default: true
+          build: true
+        - locale: es
+          name: Español
+          build: true
+      nav_translations:
+        es:
+          - Inicio: index.md
+          - Introducción: introduccion.md
+          - Configuración: configuracion.md
+          - Mantenimiento: mantenimiento.md
+          - Nuestro Futuro: nuestro-futuro.md
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -53,9 +72,8 @@ markdown_extensions:
 extra:
   alternate:
     - name: English
-      link: /en/ 
+      link: /en/
       lang: en
-
     - name: Español
       link: /es/
       lang: es

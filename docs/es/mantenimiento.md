@@ -3,7 +3,7 @@ hide:
   - navigation
 ---
 
-# Welcome to JukaboxDocs
+# Maintanance
 
 ## **Política de mantenimiento**
 
