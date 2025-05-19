@@ -3,7 +3,6 @@ nav:
   - Home: index.md
   - Getting started: getting-started.md
   - Setup: setup.md
-  - Design & Implementation: system-design.md
   - Maintanance: maintanance.md
   - Our future: our-future.md
 
@@ -52,11 +51,11 @@ markdown_extensions:
   - pymdownx.superfences
 
 extra:
-alternate:
-  - name: English
-    link: /en/ 
-    lang: en
+  alternate:
+    - name: English
+      link: /en/ 
+      lang: en
 
-  - name: Español
-    link: /es/
-    lang: es
+    - name: Español
+      link: /es/
+      lang: es
