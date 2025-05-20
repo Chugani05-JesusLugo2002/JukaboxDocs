@@ -3,4 +3,4 @@ hide:
   - navigation
 ---
 
-# Welcome to JukaboxDocs
+# **Welcome to JukaboxDocs**

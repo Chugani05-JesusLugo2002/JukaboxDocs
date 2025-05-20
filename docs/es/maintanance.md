@@ -3,7 +3,7 @@ hide:
   - navigation
 ---
 
-# Maintanance
+# **Mantenimiento y actualizaciones**
 
 ## **Política de mantenimiento**
 
@@ -87,24 +87,62 @@ Nos comprometemos a una mejora continua en la calidad de nuestras actualizacione
 
 ## **Plan de escalabilidad**
 
-### Arquitectura Técnica
-- **Despliegue Modular:** Dividir los componentes de la plataforma (gestión de lecciones, calificaciones, certificados, autenticación) en microservicios para facilitar el mantenimiento y escalabilidad.  
-- **Balanceo de Carga:** Implementación de balanceadores de carga para distribuir el tráfico entre servidores.  
+### 🛠️ Arquitectura Técnica
 
-### Mantenimiento y Optimización
-- **Integración Continua (CI/CD):** Configurar pipelines automáticos para pruebas, integración y despliegue utilizando herramientas como GitHub Actions.  
-- **Auditorías Técnicas:** Revisiones periódicas para optimizar consultas, limpieza de código y mejoras de seguridad.  
+- **Despliegue Modular:**
+  Separación de servicios clave (recomendaciones por IA, sistema de notificaciones, subida de contenido) en microservicios escalables.
 
-### Mejora del Rendimiento
-- **Optimización de Consultas:** Uso de ORM (como Django ORM) junto con optimización manual para consultas críticas.  
+* **Balanceo de Carga:**
+  Implementación de balanceadores de carga para distribuir eficientemente el tráfico entre múltiples instancias del servidor.
 
-### Seguridad 
-- **Gestión Segura de Usuarios:** Cifrado de contraseñas, autenticación multifactor (MFA), y políticas de roles/permiso.  
-- **Protección de Datos:** Cumplimiento de normativas como el RGPD para la protección de datos de estudiantes y profesores.  
+* **Base de Datos Escalable:**
+  Migración progresiva de SQLite a una base de datos más robusta como PostgreSQL o MongoDB según las necesidades.
 
-### Funcionalidades Futuras
-- **Gamificación:** Incorporación de logros y recompensas para fomentar la participación de los estudiantes.  
-- **Soporte Multilingüe:** Ampliación de la plataforma a múltiples idiomas.  
+### 🔄 Mantenimiento y Optimización
 
-### Escalabilidad del Equipo Técnico
-- **Documentación Clara:** Mantenimiento de manuales técnicos detallados para nuevos desarrolladores.  
+* **Integración Continua (CI/CD):**
+  Configuración de pipelines automáticos para pruebas, integración y despliegue usando GitHub Actions o similares.
+
+* **Auditorías Técnicas:**
+  Revisiones periódicas para optimización de consultas, refactorización de código y mejoras de seguridad.
+
+* **Monitoreo de Rendimiento:**
+  Uso de herramientas como New Relic o Prometheus para monitorear cuellos de botella y consumo de recursos.
+
+### ⚙️ Mejora del Rendimiento
+
+* **Optimización de Consultas:**
+  Combinación de ORM (por ejemplo, Django ORM) con consultas SQL personalizadas en operaciones críticas.
+
+* **CDN para Contenido Multimedia:**
+  Uso de redes de distribución de contenido para ofrecer demos, versiones acústicas y otros archivos multimedia exclusivos.
+
+### 🔐 Seguridad
+
+* **Gestión Segura de Usuarios:**
+  Cifrado robusto de contraseñas, autenticación multifactor (MFA), y sistema de roles para control de permisos.
+
+* **Protección de Datos:**
+  Cumplimiento de normativas como el RGPD, incluyendo consentimiento de uso y anonimización de datos.
+
+### 🚀 Funcionalidades Futuras
+
+* **Gamificación:**
+  Incorporación de recompensas por interacción, participación en listas colaborativas y contribuciones a la comunidad.
+
+* **Soporte Multilingüe:**
+  Ampliación del soporte a más idiomas como francés, alemán y otros.
+
+* **IA para Recomendaciones:**
+  Sistema inteligente que analiza hábitos de escucha para recomendar nuevos artistas y canciones.
+
+* **Filtros Avanzados:**
+  Implementación de filtros por estado de ánimo, ubicación, tipo de artista y colaboraciones recientes.
+
+### 👥 Escalabilidad del Equipo Técnico
+
+* **Documentación Clara:**
+  Manuales técnicos y de procesos detallados para facilitar la incorporación de nuevos desarrolladores.
+
+* **Gestión de Versiones:**
+  Uso de ramas bien definidas, revisiones de código y convenciones claras de desarrollo.

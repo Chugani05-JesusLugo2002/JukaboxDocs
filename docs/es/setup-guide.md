@@ -3,7 +3,7 @@ hide:
   - navigation
 ---
 
-# **Setup**
+# **Guía de configuración**
 
 ## **Modelo de datos**
 

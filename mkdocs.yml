@@ -3,7 +3,7 @@ site_name: JukaboxDocs
 nav:
   - Home: index.md
   - Getting Started: getting-started.md
-  - Setup: setup.md
+  - Setup: setup-guide.md
   - Maintenance: maintanance.md
   - Our Future: our-future.md
 
@@ -12,12 +12,12 @@ theme:
   language: en
   palette:
     - scheme: default
-      primary: teal
+      primary: indigo
       toggle:
         icon: material/brightness-7 
         name: Switch to dark mode
     - scheme: slate
-      primary: teal
+      primary: indigo
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
@@ -55,10 +55,10 @@ plugins:
       nav_translations:
         es:
           - Inicio: index.md
-          - Introducción: introduccion.md
-          - Configuración: configuracion.md
-          - Mantenimiento: mantenimiento.md
-          - Nuestro Futuro: nuestro-futuro.md
+          - Primeros Pasos: getting-started.md
+          - Guía de Configuración: setup-guide.md
+          - Mantenimiento: maintanance.md
+          - Nuestro Futuro: our-future.md
 
 markdown_extensions:
   - pymdownx.highlight:

@@ -3,52 +3,54 @@ hide:
   - navigation
 ---
 
-# Maintanance
+# **Maintanance**
 
-## **Política de mantenimiento**
+## **Maintenance Policy**
 
-### Introducción
+### Introduction
 
-Esta política tiene como objetivo garantizar que nuestra plataforma reciba el mantenimiento adecuado para asegurar su funcionamiento óptimo, su seguridad y el cumplimiento de las expectativas de los usuarios. Esta política cubre tanto las actualizaciones regulares de software como el soporte técnico disponible para resolver incidencias.
+This policy aims to ensure that our platform receives appropriate maintenance to guarantee optimal performance, security, and user satisfaction. It covers both regular software updates and technical support available to resolve incidents.
 
-### Frecuencia de Actualizaciones
+### Update Frequency
 
-Las actualizaciones son fundamentales para mantener la web actualizada, con nuevas funcionalidades, mejoras de seguridad y solución de errores. La frecuencia de las actualizaciones será la siguiente:
+Updates are essential to keep the website current, with new features, security enhancements, and bug fixes. The update frequency will be as follows:
 
-- **Actualizaciones de Seguridad:** Se realizarán de manera **inmediata** tan pronto como se detecten vulnerabilidades críticas o riesgos de seguridad. En caso de emergencias de seguridad, se ejecutarán parches de manera prioritaria.
-- **Actualizaciones Menores:** Estas incluyen mejoras de rendimiento, optimización y solución de errores no críticos. Se realizarán de manera **mensual**, salvo que una actualización urgente sea necesaria debido a una falla importante.
-- **Actualizaciones Mayores:** Estas pueden implicar cambios significativos en la funcionalidad o características del sistema. Se realizarán **trimestralmente** o según lo exijan las necesidades de la plataforma o cambios tecnológicos importantes.
+* **Security Updates:** These will be carried out **immediately** upon detection of critical vulnerabilities or security risks. In case of security emergencies, patches will be applied as a priority.
+* **Minor Updates:** These include performance improvements, optimizations, and non-critical bug fixes. They will be conducted on a **monthly** basis unless an urgent update is required due to a major issue.
+* **Major Updates:** These may involve significant changes to system functionality or features. They will be conducted **quarterly** or as needed based on platform requirements or major technological changes.
 
-### Soporte Técnico
+### Technical Support
 
-El soporte técnico estará disponible para resolver cualquier inconveniente relacionado con la página web. La cobertura y los tiempos de respuesta son los siguientes:
+Technical support will be available to resolve any issues related to the website. Coverage and response times are as follows:
 
-- **Soporte 24/7:** Para fallos de alto impacto, el soporte estará disponible las 24 horas del día, los 7 días de la semana.
-- **Soporte Regular:** Los problemas menos críticos, el soporte estará disponible de **lunes a viernes**, de 9:00 AM a 6:00 PM.
-- **Tiempo de Respuesta:**
-  - **Emergencias (Alta prioridad):** El tiempo de respuesta será de **máximo 2 horas**.
-  - **Problemas de baja prioridad:** El tiempo de respuesta será de **máximo 24 horas**.
-  - **Consultas o mejoras menores:** Se atenderán dentro de un plazo de **48 horas**.
+* **24/7 Support:** For high-impact failures, support will be available 24 hours a day, 7 days a week.
+* **Regular Support:** For less critical issues, support will be available **Monday to Friday**, from 9:00 AM to 6:00 PM.
+* **Response Time:**
 
-### Proceso de Actualización
+  * **Emergencies (High Priority):** Response time will be **a maximum of 2 hours**.
+  * **Low Priority Issues:** Response time will be **a maximum of 24 hours**.
+  * **Inquiries or minor improvements:** Will be addressed within **48 hours**.
 
-El proceso para realizar actualizaciones y mantenimiento será el siguiente:
+### Update Process
 
-  - **Planeación:** Las actualizaciones mayores serán notificadas con **mínimo 1 semana de antelación**.
-  - **Pruebas:** Antes de implementar actualizaciones críticas o mayores, se realizarán pruebas en un entorno de desarrollo o staging para asegurar que no se afecten otras funcionalidades del sistema.
-  - **Implementación:** Las actualizaciones se implementarán durante **ventanas de mantenimiento preestablecidas** que se comunicarán con antelación a los usuarios.
-  - **Monitoreo post-actualización:** Después de la actualización, se realizará un monitoreo intensivo para detectar cualquier posible incidencia.
+The process for performing updates and maintenance will be as follows:
 
-### Exclusiones
+* **Planning:** Major updates will be announced at least **1 week in advance**.
+* **Testing:** Before implementing critical or major updates, tests will be conducted in a development or staging environment to ensure no other system functionalities are affected.
+* **Implementation:** Updates will be implemented during **predefined maintenance windows** that will be communicated to users in advance.
+* **Post-update Monitoring:** After the update, intensive monitoring will be performed to detect any potential issues.
 
-Esta política de mantenimiento no cubre:
+### Exclusions
 
-  - **Actualizaciones por causas externas:** Las actualizaciones debidas a cambios en el entorno de terceros (por ejemplo, cambios en sistemas operativos, navegadores o plataformas externas) no están incluidas.
-  - **Fallas no relacionadas con el mantenimiento del sistema:** El soporte técnico no cubrirá problemas que no sean derivados de un mal funcionamiento o actualización del sitio web gestionado.
+This maintenance policy does not cover:
 
-### Mejoras Continuas
+* **Updates due to external causes:** Updates required due to changes in third-party environments (e.g., changes in operating systems, browsers, or external platforms) are not included.
+* **Failures not related to system maintenance:** Technical support will not cover issues unrelated to malfunctions or updates of the managed website.
 
-Nos comprometemos a una mejora continua en la calidad de nuestras actualizaciones y en la disponibilidad del soporte, para proporcionar la mejor experiencia a nuestros usuarios y garantizar la eficiencia de los sistemas implementados.
+### Continuous Improvement
+
+We are committed to continuously improving the quality of our updates and the availability of support, to provide the best experience to our users and ensure the efficiency of the implemented systems.
+
 
 ## **Registro de cambios (Changelog)**
 
@@ -56,55 +58,66 @@ Nos comprometemos a una mejora continua en la calidad de nuestras actualizacione
 
 **Lanzamiento Inicial:**
 
-- **Primera versión estable** de la plataforma disponible para los usuarios.
-- Funcionalidad principal: Ofrecer una plataforma educativa integral que facilita el intercambio de contenidos académicos, gestión de calificaciones y emisión de certificados para instituciones educativas.
-- Interfaz de usuario: Diseño simple e intuitivo para facilitar la navegación.
-- Sistema de autenticación: Inclusión de inicio de sesión con usuario y contraseña.
-- Base de datos inicial implementada con SQLite.
-
-**Características incluidas:**
-
-- Generación de informes en PDF.
-- Soporte para múltiples idiomas, está en desarrollo.
-
-**Mejoras:**
-
-- Estabilidad y rendimiento optimizados para garantizar una experiencia de usuario fluida.
-
-**Correcciones:**
-
-- Se implementaron pruebas iniciales para garantizar la calidad y confiabilidad de la aplicación.
-
-**Notas:**
-
-- Se trata de la **primera versión estable** del producto. Continuaremos mejorando y añadiendo nuevas características en futuras actualizaciones.
-
-### Notas
-
-- Todos los cambios importantes se comunican a través de actualizaciones automáticas.
-- Las actualizaciones menores, parches y correcciones de errores se incluyen en versiones de mantenimiento como la 1.0.1.
 
 
-## **Plan de escalabilidad**
+## **Scalability Plan**
 
-### Arquitectura Técnica
-- **Despliegue Modular:** Dividir los componentes de la plataforma (gestión de lecciones, calificaciones, certificados, autenticación) en microservicios para facilitar el mantenimiento y escalabilidad.  
-- **Balanceo de Carga:** Implementación de balanceadores de carga para distribuir el tráfico entre servidores.  
+### 🛠️ Technical Architecture
 
-### Mantenimiento y Optimización
-- **Integración Continua (CI/CD):** Configurar pipelines automáticos para pruebas, integración y despliegue utilizando herramientas como GitHub Actions.  
-- **Auditorías Técnicas:** Revisiones periódicas para optimizar consultas, limpieza de código y mejoras de seguridad.  
+* **Modular Deployment:**
+  Separation of key services (AI recommendations, notification system, content upload) into scalable microservices.
 
-### Mejora del Rendimiento
-- **Optimización de Consultas:** Uso de ORM (como Django ORM) junto con optimización manual para consultas críticas.  
+* **Load Balancing:**
+  Implementation of load balancers to efficiently distribute traffic across multiple server instances.
 
-### Seguridad 
-- **Gestión Segura de Usuarios:** Cifrado de contraseñas, autenticación multifactor (MFA), y políticas de roles/permiso.  
-- **Protección de Datos:** Cumplimiento de normativas como el RGPD para la protección de datos de estudiantes y profesores.  
+* **Scalable Database:**
+  Gradual migration from SQLite to a more robust database like PostgreSQL or MongoDB based on needs.
 
-### Funcionalidades Futuras
-- **Gamificación:** Incorporación de logros y recompensas para fomentar la participación de los estudiantes.  
-- **Soporte Multilingüe:** Ampliación de la plataforma a múltiples idiomas.  
+### 🔄 Maintenance and Optimization
 
-### Escalabilidad del Equipo Técnico
-- **Documentación Clara:** Mantenimiento de manuales técnicos detallados para nuevos desarrolladores.  
+* **Continuous Integration (CI/CD):**
+  Configuration of automated pipelines for testing, integration, and deployment using GitHub Actions or similar tools.
+
+* **Technical Audits:**
+  Periodic reviews to optimize queries, refactor code, and enhance security.
+
+* **Performance Monitoring:**
+  Use of tools like New Relic or Prometheus to monitor bottlenecks and resource usage.
+
+### ⚙️ Performance Improvement
+
+* **Query Optimization:**
+  Combining ORM (e.g., Django ORM) with custom SQL queries in critical operations.
+
+* **CDN for Multimedia Content:**
+  Use of content delivery networks to serve demos, acoustic versions, and other exclusive media files.
+
+### 🔐 Security
+
+* **Secure User Management:**
+  Strong password encryption, multi-factor authentication (MFA), and role-based permission system.
+
+* **Data Protection:**
+  Compliance with regulations like GDPR, including consent management and data anonymization.
+
+### 🚀 Future Features
+
+* **Gamification:**
+  Incorporation of rewards for interaction, participation in collaborative playlists, and community contributions.
+
+* **Multilingual Support:**
+  Expansion of language support to French, German, and others.
+
+* **AI for Recommendations:**
+  Intelligent system that analyzes listening habits to recommend new artists and songs.
+
+* **Smart Filters:**
+  Implementation of filters by mood, location, artist type, and recent collaborations.
+
+### 👥 Technical Team Scalability
+
+* **Clear Documentation:**
+  Detailed technical and process manuals to facilitate onboarding of new developers.
+
+* **Version Control:**
+  Use of well-defined branches, code reviews, and clear development conventions.

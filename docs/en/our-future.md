@@ -3,26 +3,33 @@ hide:
   - navigation
 ---
 
-# Our future
+# **Our future**
 
-## **Estado actual del proyecto**
+## **Current Project Status**
 
-**Alcance cumplido:**
+**Scope Achieved:**
 
-- **Primera versión estable:** La plataforma está disponible para los usuarios.  
-- **Funcionalidad principal:** Proporciona una solución educativa integral que facilita el intercambio de contenidos académicos, la gestión de calificaciones y la emisión de certificados para instituciones educativas.  
-- **Interfaz de usuario:** Diseño más intuitivo y accesible para una navegación fluida.  
-- **Sistema de autenticación:** Integración de inicio de sesión mediante usuario y contraseña.  
-- **Base de datos:** Implementación inicial con SQLite.  
-- **Soporte multilingüe:** Disponible en inglés, español, hindi y español venezolano.  
-- **Seguridad:** Implementación de autenticación de dos factores (2FA).  
+- **First Stable Version:** The platform is available to users.
+- **Core Functionality:** Provides a platform where users can discover artists and songs, as well as share their favorites, like, comment, and share.
+- **User Interface:** More intuitive and accessible design for smooth navigation.
+- **Authentication System:** Login integration using username and password.
+- **Database:** Initial implementation with SQLite.
+- **Multilingual Support:** Available in English and Spanish.
+- **Security:** Implementation of two-factor authentication (2FA).
 
-## **Futuras actualizaciones**
+## **Future Updates**
 
-**Mejoras planificadas:**
+**Planned Improvements:**
 
-- Optimización adicional de la carga de la página principal, con un objetivo de reducción del tiempo de respuesta en un 30 %.  
-- Implementación de un sistema de notificaciones para informar sobre actualizaciones relevantes.  
-- Incorporación de opciones de personalización de temas, con tres nuevos estilos predefinidos.  
-- Actualización de la documentación con guías ampliadas y ejemplos prácticos.  
-- Ampliación del soporte de idiomas, incluyendo francés, alemán y otros.  
+- Further optimization of the main page loading time, aiming for a 30% reduction in response time.
+- Implementation of a notification system to inform about relevant updates.
+- Update of the documentation with expanded guides and practical examples.
+- Expansion of language support, including French, German, and others.
+- Incorporate AI to recommend new artists based on user preferences (genres, favorite artists, activity).
+- Music discovery map: explore by country, genre, mood.
+- Smart filters: trending songs, independent artists, new collaborations.
+- Create featured sections for independent or new artists.
+- Allow artists to upload exclusive content (demos, acoustic versions, messages for fans).
+- Create collaborative playlists among multiple users.
+- Enable comments and voting within playlists.
+- Allow the user to recover their password via email.

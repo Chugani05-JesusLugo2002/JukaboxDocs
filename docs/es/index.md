@@ -3,5 +3,5 @@ hide:
   - navigation
 ---
 
-# Welcome to JukaboxDocs
+# **Bienvenidos a JukaboxDocs**
 

@@ -40,7 +40,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Once the dependencies are installed in an activated virtual environment, we we carry out the migrations with:
+Once the dependencies are installed in an activated virtual environment, we carry out the migrations with:
 
 ``` sh
 just check
