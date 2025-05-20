@@ -77,3 +77,6 @@ extra:
     - name: Español
       link: /es/
       lang: es
+
+extra_css:
+  - styles/style.css
