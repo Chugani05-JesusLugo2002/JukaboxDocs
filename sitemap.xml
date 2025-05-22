@@ -1,73 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
-        <loc>Noneindex.html</loc>
+        <loc>None./</loc>
         <lastmod>2025-05-22</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneindex.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="Nonees/index.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="None"/>
+        <xhtml:link rel="alternate" hreflang="es" href="Nonees/"/>
     </url>
     <url>
-        <loc>Nonegetting-started.html</loc>
+        <loc>Nonegetting-started/</loc>
         <lastmod>2025-05-22</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Nonegetting-started.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="Nonees/getting-started.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonegetting-started/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="Nonees/getting-started/"/>
     </url>
     <url>
-        <loc>Nonemaintanance.html</loc>
+        <loc>Nonemaintanance/</loc>
         <lastmod>2025-05-22</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Nonemaintanance.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="Nonees/maintanance.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonemaintanance/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="Nonees/maintanance/"/>
     </url>
     <url>
-        <loc>Noneour-future.html</loc>
+        <loc>Noneour-future/</loc>
         <lastmod>2025-05-22</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneour-future.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="Nonees/our-future.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneour-future/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="Nonees/our-future/"/>
     </url>
     <url>
-        <loc>Nonesetup-guide.html</loc>
+        <loc>Nonesetup-guide/</loc>
         <lastmod>2025-05-22</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Nonesetup-guide.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="Nonees/setup-guide.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonesetup-guide/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="Nonees/setup-guide/"/>
     </url>
     <url>
-        <loc>Nonees/index.html</loc>
+        <loc>Nonees/</loc>
         <lastmod>2025-05-22</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="es" href="Nonees/index.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneindex.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="Nonees/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="None"/>
     </url>
     <url>
-        <loc>Nonees/getting-started.html</loc>
+        <loc>Nonees/getting-started/</loc>
         <lastmod>2025-05-22</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="es" href="Nonees/getting-started.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Nonegetting-started.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="Nonees/getting-started/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonegetting-started/"/>
     </url>
     <url>
-        <loc>Nonees/maintanance.html</loc>
+        <loc>Nonees/maintanance/</loc>
         <lastmod>2025-05-22</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="es" href="Nonees/maintanance.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Nonemaintanance.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="Nonees/maintanance/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonemaintanance/"/>
     </url>
     <url>
-        <loc>Nonees/our-future.html</loc>
+        <loc>Nonees/our-future/</loc>
         <lastmod>2025-05-22</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="es" href="Nonees/our-future.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneour-future.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="Nonees/our-future/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneour-future/"/>
     </url>
     <url>
-        <loc>Nonees/setup-guide.html</loc>
+        <loc>Nonees/setup-guide/</loc>
         <lastmod>2025-05-22</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="es" href="Nonees/setup-guide.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Nonesetup-guide.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="Nonees/setup-guide/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonesetup-guide/"/>
     </url>
 </urlset>
