@@ -138,6 +138,34 @@ Se utilizó **Redis** como sistema de cola para la ejecución eficiente de tarea
 
 ### El Importer como tarea desacoplada
 
+Como antes había mencionado, el **Importer** es una de las aplicaciones y pilares fundamentales de Jukabox, es la encargada de la importación de datos de la API de MusicBrainz y de la gestión de los enlaces externos existentes. Su función algo inmensa posee multiples solicitudes de datos a la API de MusicBrainz, entre ellas, incluso, la descarga de *covers* para álbumes (si estan disponibles). Es una función que toma tiempo para realizarse, y mientras el artista a añadir tenga más contenido, mayor será el tiempo de espera que deberá tomar el usuario desde que inicie el proceso de importación hasta que finalice para seguir usando la aplicación.
+
+``` mermaid
+graph LR
+    A[Request artist] --> B[Get artist]
+    B --> C{Album available?}
+    C -->|Yes| D[Get album]
+    D --> E[Download cover]
+    E --> F[Get songs]
+    F --> C
+    C -->|No| G[Save data in web]
+    G --> H[I can navigate freely!]
+```
+
+Para solucionar esto decidimos diseñar dicha función como una tarea desacoplada: aprovechando de servicios como Redis y la librería Django-RQ, podemos separar al usuario de este tiempo de espera y realizar todo este procedimiento de busqueda y descarga de datos en segundo plano y permitir al usuario la navegación libre mientras todo el trabajo se está realizando.
+
+``` mermaid
+graph LR
+    A[Request artist] --> B[Get artist]
+    A --> H[I can navigate freely again!]
+    B --> C{Album available?}
+    C -->|Yes| D[Get album]
+    D --> E[Download cover]
+    E --> F[Get songs]
+    F --> C
+    C -->|No| G[Save data in web]
+    G -->|Introduces the data in web without interrumpt the experience| H
+```
 
 ## 🎨 **Decisiones de diseño**
 
