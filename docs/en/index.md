@@ -3,8 +3,6 @@ hide:
   - navigation
 ---
 
-# ****
-
 <div class="hero">
 
   <h1>Welcome to JukaboxDocs</h1>
