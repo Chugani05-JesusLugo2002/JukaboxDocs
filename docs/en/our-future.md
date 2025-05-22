@@ -3,9 +3,9 @@ hide:
   - navigation
 ---
 
-# **Our future**
+# 🌟 **Our future**
 
-## **Current Project Status**
+## 🚧 **Current Project Status**
 
 **Scope Achieved:**
 
@@ -15,9 +15,8 @@ hide:
 - **Authentication System:** Login integration using username and password.
 - **Database:** Initial implementation with SQLite.
 - **Multilingual Support:** Available in English and Spanish.
-- **Security:** Implementation of two-factor authentication (2FA).
 
-## **Future Updates**
+## 🔮 **Future Updates**
 
 **Planned Improvements:**
 

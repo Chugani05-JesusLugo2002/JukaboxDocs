@@ -3,15 +3,15 @@ hide:
   - navigation
 ---
 
-# **Maintanance**
+# 🛠️ **Maintanance**
 
-## **Maintenance Policy**
+## 🧾 **Maintenance Policy**
 
-### Introduction
+### 🧩 Introduction
 
 This policy aims to ensure that our platform receives appropriate maintenance to guarantee optimal performance, security, and user satisfaction. It covers both regular software updates and technical support available to resolve incidents.
 
-### Update Frequency
+### 📅 Update Frequency
 
 Updates are essential to keep the website current, with new features, security enhancements, and bug fixes. The update frequency will be as follows:
 
@@ -19,7 +19,7 @@ Updates are essential to keep the website current, with new features, security e
 * **Minor Updates:** These include performance improvements, optimizations, and non-critical bug fixes. They will be conducted on a **monthly** basis unless an urgent update is required due to a major issue.
 * **Major Updates:** These may involve significant changes to system functionality or features. They will be conducted **quarterly** or as needed based on platform requirements or major technological changes.
 
-### Technical Support
+### 🆘 Technical Support
 
 Technical support will be available to resolve any issues related to the website. Coverage and response times are as follows:
 
@@ -31,7 +31,7 @@ Technical support will be available to resolve any issues related to the website
   * **Low Priority Issues:** Response time will be **a maximum of 24 hours**.
   * **Inquiries or minor improvements:** Will be addressed within **48 hours**.
 
-### Update Process
+### 🔄 Update Process
 
 The process for performing updates and maintenance will be as follows:
 
@@ -40,27 +40,59 @@ The process for performing updates and maintenance will be as follows:
 * **Implementation:** Updates will be implemented during **predefined maintenance windows** that will be communicated to users in advance.
 * **Post-update Monitoring:** After the update, intensive monitoring will be performed to detect any potential issues.
 
-### Exclusions
+### ❌ Exclusions
 
 This maintenance policy does not cover:
 
 * **Updates due to external causes:** Updates required due to changes in third-party environments (e.g., changes in operating systems, browsers, or external platforms) are not included.
 * **Failures not related to system maintenance:** Technical support will not cover issues unrelated to malfunctions or updates of the managed website.
 
-### Continuous Improvement
+### 🔁 Continuous Improvement
 
 We are committed to continuously improving the quality of our updates and the availability of support, to provide the best experience to our users and ensure the efficiency of the implemented systems.
 
 
-## **Registro de cambios (Changelog)**
+Here is the English translation of your changelog:
 
-### Versión 1.0.0 - 17 de diciembre de 2024
+---
 
-**Lanzamiento Inicial:**
+## 📘 **Changelog**
+
+### 🗓️ Version 1.0.0 - May 20, 2024
+
+**Initial Release:**
+
+* **First stable version** of the platform available to users.
+* Core functionality: Provides a platform where users can discover artists and songs, share their favorites, and interact by liking, commenting, and sharing.
+* User interface: Simple and intuitive design for easy navigation.
+* Authentication system: Includes login with username and password.
+* Initial database implemented with SQLite.
+
+**Included Features:**
+
+* Light and dark theme.
+* Multilingual support (currently in development).
+* Artist import via MBID.
+
+**Improvements:**
+
+* Optimized stability and performance to ensure a smooth user experience.
+
+**Fixes:**
+
+* Initial tests implemented to ensure application quality and reliability.
+
+**Notes:**
+
+* This is the **first stable release** of the product. We will continue to improve and add new features in future updates.
+
+### Notes
+
+* All major changes are communicated through automatic updates.
+* Minor updates, patches, and bug fixes are included in maintenance versions.
 
 
-
-## **Scalability Plan**
+## 🌐 **Scalability Plan**
 
 ### 🛠️ Technical Architecture
 

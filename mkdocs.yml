@@ -52,13 +52,6 @@ plugins:
         - locale: es
           name: Español
           build: true
-      nav_translations:
-        es:
-          - Inicio: index.md
-          - Primeros Pasos: getting-started.md
-          - Guía de Configuración: setup-guide.md
-          - Mantenimiento: maintanance.md
-          - Nuestro Futuro: our-future.md
 
 markdown_extensions:
   - pymdownx.highlight:

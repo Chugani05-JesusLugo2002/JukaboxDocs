@@ -3,15 +3,15 @@ hide:
   - navigation
 ---
 
-# **Mantenimiento y actualizaciones**
+# 🛠️ Mantenimiento y actualizaciones
 
-## **Política de mantenimiento**
+## 🧾 Política de mantenimiento
 
-### Introducción
+### 🧩 Introducción
 
 Esta política tiene como objetivo garantizar que nuestra plataforma reciba el mantenimiento adecuado para asegurar su funcionamiento óptimo, su seguridad y el cumplimiento de las expectativas de los usuarios. Esta política cubre tanto las actualizaciones regulares de software como el soporte técnico disponible para resolver incidencias.
 
-### Frecuencia de Actualizaciones
+### 📅 Frecuencia de Actualizaciones
 
 Las actualizaciones son fundamentales para mantener la web actualizada, con nuevas funcionalidades, mejoras de seguridad y solución de errores. La frecuencia de las actualizaciones será la siguiente:
 
@@ -19,7 +19,7 @@ Las actualizaciones son fundamentales para mantener la web actualizada, con nuev
 - **Actualizaciones Menores:** Estas incluyen mejoras de rendimiento, optimización y solución de errores no críticos. Se realizarán de manera **mensual**, salvo que una actualización urgente sea necesaria debido a una falla importante.
 - **Actualizaciones Mayores:** Estas pueden implicar cambios significativos en la funcionalidad o características del sistema. Se realizarán **trimestralmente** o según lo exijan las necesidades de la plataforma o cambios tecnológicos importantes.
 
-### Soporte Técnico
+### 🆘 Soporte Técnico
 
 El soporte técnico estará disponible para resolver cualquier inconveniente relacionado con la página web. La cobertura y los tiempos de respuesta son los siguientes:
 
@@ -30,7 +30,7 @@ El soporte técnico estará disponible para resolver cualquier inconveniente rel
   - **Problemas de baja prioridad:** El tiempo de respuesta será de **máximo 24 horas**.
   - **Consultas o mejoras menores:** Se atenderán dentro de un plazo de **48 horas**.
 
-### Proceso de Actualización
+### 🔄 Proceso de Actualización
 
 El proceso para realizar actualizaciones y mantenimiento será el siguiente:
 
@@ -39,33 +39,35 @@ El proceso para realizar actualizaciones y mantenimiento será el siguiente:
   - **Implementación:** Las actualizaciones se implementarán durante **ventanas de mantenimiento preestablecidas** que se comunicarán con antelación a los usuarios.
   - **Monitoreo post-actualización:** Después de la actualización, se realizará un monitoreo intensivo para detectar cualquier posible incidencia.
 
-### Exclusiones
+### ❌ Exclusiones
 
 Esta política de mantenimiento no cubre:
 
   - **Actualizaciones por causas externas:** Las actualizaciones debidas a cambios en el entorno de terceros (por ejemplo, cambios en sistemas operativos, navegadores o plataformas externas) no están incluidas.
   - **Fallas no relacionadas con el mantenimiento del sistema:** El soporte técnico no cubrirá problemas que no sean derivados de un mal funcionamiento o actualización del sitio web gestionado.
 
-### Mejoras Continuas
+### 🔁 Mejoras Continuas
 
 Nos comprometemos a una mejora continua en la calidad de nuestras actualizaciones y en la disponibilidad del soporte, para proporcionar la mejor experiencia a nuestros usuarios y garantizar la eficiencia de los sistemas implementados.
 
-## **Registro de cambios (Changelog)**
 
-### Versión 1.0.0 - 17 de diciembre de 2024
+## 📘 **Registro de cambios (Changelog)**
+
+### 🗓️ Versión 1.0.0 - 20 de mayo de 2024
 
 **Lanzamiento Inicial:**
 
 - **Primera versión estable** de la plataforma disponible para los usuarios.
-- Funcionalidad principal: Ofrecer una plataforma educativa integral que facilita el intercambio de contenidos académicos, gestión de calificaciones y emisión de certificados para instituciones educativas.
+- Funcionalidad principal: Ofrecer una plataforma donde los usuarios pueden descubrir artistas y canciones, así como compartir sus favoritos y la posibilidad de dar "me gusta", comentar y compartir.
 - Interfaz de usuario: Diseño simple e intuitivo para facilitar la navegación.
 - Sistema de autenticación: Inclusión de inicio de sesión con usuario y contraseña.
 - Base de datos inicial implementada con SQLite.
 
 **Características incluidas:**
 
-- Generación de informes en PDF.
+- Tema claro y oscuro.
 - Soporte para múltiples idiomas, está en desarrollo.
+- Importe de artistas mediante MBID.
 
 **Mejoras:**
 
@@ -82,10 +84,10 @@ Nos comprometemos a una mejora continua en la calidad de nuestras actualizacione
 ### Notas
 
 - Todos los cambios importantes se comunican a través de actualizaciones automáticas.
-- Las actualizaciones menores, parches y correcciones de errores se incluyen en versiones de mantenimiento como la 1.0.1.
+- Las actualizaciones menores, parches y correcciones de errores se incluyen en versiones de mantenimiento.
 
 
-## **Plan de escalabilidad**
+## 🌐 **Plan de escalabilidad**
 
 ### 🛠️ Arquitectura Técnica
 
@@ -126,9 +128,6 @@ Nos comprometemos a una mejora continua en la calidad de nuestras actualizacione
   Cumplimiento de normativas como el RGPD, incluyendo consentimiento de uso y anonimización de datos.
 
 ### 🚀 Funcionalidades Futuras
-
-* **Gamificación:**
-  Incorporación de recompensas por interacción, participación en listas colaborativas y contribuciones a la comunidad.
 
 * **Soporte Multilingüe:**
   Ampliación del soporte a más idiomas como francés, alemán y otros.

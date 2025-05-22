@@ -3,9 +3,9 @@ hide:
   - navigation
 ---
 
-# **Nuestro futuro**
+# 🌟 **Nuestro futuro**
 
-## **Estado actual del proyecto**
+## 🚧 **Estado actual del proyecto**
 
 **Alcance cumplido:**
 
@@ -15,9 +15,8 @@ hide:
 - **Sistema de autenticación:** Integración de inicio de sesión mediante usuario y contraseña.  
 - **Base de datos:** Implementación inicial con SQLite.  
 - **Soporte multilingüe:** Disponible en inglés y español
-- **Seguridad:** Implementación de autenticación de dos factores (2FA).  
 
-## **Futuras actualizaciones**
+## 🔮 **Futuras actualizaciones**
 
 **Mejoras planificadas:**
 
