@@ -114,6 +114,12 @@ On the other hand, the structure we follow on the *frontend* is focused on the p
 
 ## 💻 **Technologies and Tools**
 
+**Development Environments and Tools:**
+
+* **Visual Studio Code** as the main editor, with extensions such as Django, Prettier, Error Lens, and custom snippets that improved efficiency.
+* **Git** for version control.
+* **SQLite** as the database management system, used by default by the Django framework.
+
 **Languages:**
 **Python**, **SQL**, and **TypeScript** were used as programming languages. For the structure and design of the web interface, **HTML**, **CSS**, and **SCSS** were used as markup and style languages.
 
@@ -131,11 +137,36 @@ Notable libraries include:
 **Complementary Technologies:**
 **Redis** was used as a queue system to efficiently execute asynchronous tasks via django-rq.
 
-**Development Environments and Tools:**
+### 📤 The Importer as a Decoupled Task
 
-* **Visual Studio Code** as the main editor, with extensions such as Django, Prettier, Error Lens, and custom snippets that improved efficiency.
-* **Git** for version control.
-* **SQLite** as the database management system, used by default by the Django framework.
+As I mentioned before, the **Importer** is one of the core applications and pillars of Jukabox. It is responsible for importing data from the MusicBrainz API and managing existing external links. This rather extensive function makes multiple requests to the MusicBrainz API, including downloading *covers* for albums (if available). It is a time-consuming process, and the more content the artist to be added has, the longer the user will have to wait from when the import process starts until it finishes before they can continue using the application.
+
+```mermaid
+graph LR
+    A[Request artist] --> B[Get artist]
+    B --> C{Album available?}
+    C -->|Yes| D[Get album]
+    D --> E[Download cover]
+    E --> F[Get songs]
+    F --> C
+    C -->|No| G[Save data in web]
+    G --> H[I can navigate freely!]
+```
+
+To solve this, we decided to design this function as a decoupled task: by leveraging services like Redis and the Django-RQ library, we can separate the user from this waiting time and run the entire search and download process in the background, allowing the user to navigate freely while all the work is being done.
+
+```mermaid
+graph LR
+    A[Request artist] --> B[Get artist]
+    A --> H[I can navigate freely again!]
+    B --> C{Album available?}
+    C -->|Yes| D[Get album]
+    D --> E[Download cover]
+    E --> F[Get songs]
+    F --> C
+    C -->|No| G[Save data in web]
+    G -->|Inserts the data into the web without interrupting the experience| H
+```
 
 
 ## 🎨 **Design Decisions**

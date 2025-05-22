@@ -136,7 +136,7 @@ Entre las librerías destacadas se encuentran:
 **Tecnologías complementarias:**
 Se utilizó **Redis** como sistema de cola para la ejecución eficiente de tareas asincrónicas a través de django-rq.
 
-### El Importer como tarea desacoplada
+### 📤 El Importer como tarea desacoplada
 
 Como antes había mencionado, el **Importer** es una de las aplicaciones y pilares fundamentales de Jukabox, es la encargada de la importación de datos de la API de MusicBrainz y de la gestión de los enlaces externos existentes. Su función algo inmensa posee multiples solicitudes de datos a la API de MusicBrainz, entre ellas, incluso, la descarga de *covers* para álbumes (si estan disponibles). Es una función que toma tiempo para realizarse, y mientras el artista a añadir tenga más contenido, mayor será el tiempo de espera que deberá tomar el usuario desde que inicie el proceso de importación hasta que finalice para seguir usando la aplicación.
 
@@ -166,6 +166,7 @@ graph LR
     C -->|No| G[Save data in web]
     G -->|Introduces the data in web without interrumpt the experience| H
 ```
+
 
 ## 🎨 **Decisiones de diseño**
 
