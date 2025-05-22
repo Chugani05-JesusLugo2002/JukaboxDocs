@@ -70,10 +70,10 @@ markdown_extensions:
 extra:
   alternate:
     - name: English
-      link: /en/
+      link: /JukaboxDocs/en/
       lang: en
     - name: Español
-      link: /es/
+      link: /JukaboxDocs/es/
       lang: es
 
 extra_css:
