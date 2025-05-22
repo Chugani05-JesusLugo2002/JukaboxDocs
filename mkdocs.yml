@@ -40,7 +40,6 @@ repo_name: Jukabox
 
 plugins:
   - search
-  - offline
   - i18n:
       docs_structure: folder
       default_language: en
