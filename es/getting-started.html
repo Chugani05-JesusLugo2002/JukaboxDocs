@@ -1,0 +1,1035 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="index.html">
+      
+      
+        <link rel="next" href="setup-guide.html">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Getting Started - JukaboxDocs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+        <script src="https://unpkg.com/iframe-worker/shim"></script>
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../styles/style.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#primeros-pasos" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="index.html" title="JukaboxDocs" class="md-header__button md-logo" aria-label="JukaboxDocs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            JukaboxDocs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Getting Started
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Seleccionar idioma">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../getting-started.html" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="getting-started.html" hreflang="es" class="md-select__link">
+              Español
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Compartir" aria-label="Compartir" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Chugani05-JesusLugo2002/Jukabox" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Jukabox
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="index.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="getting-started.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Getting Started
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="setup-guide.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Setup
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="maintanance.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Maintenance
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="our-future.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Our Future
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="JukaboxDocs" class="md-nav__button md-logo" aria-label="JukaboxDocs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    JukaboxDocs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Chugani05-JesusLugo2002/Jukabox" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Jukabox
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="getting-started.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#autenticacion-de-usuarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔐 Autenticación de usuarios
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modelo-de-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      🗂️ Modelo de datos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estructura-del-codigo" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧱 Estructura del código
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧱 Estructura del código">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#backend" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠️ Backend
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frontend" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎨 Frontend
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tecnologias-y-herramientas" class="md-nav__link">
+    <span class="md-ellipsis">
+      💻 Tecnologías y Herramientas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💻 Tecnologías y Herramientas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#el-importer-como-tarea-desacoplada" class="md-nav__link">
+    <span class="md-ellipsis">
+      📤 El Importer como tarea desacoplada
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decisiones-de-diseno" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎨 Decisiones de diseño
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎨 Decisiones de diseño">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#justificacion-de-tecnologias" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ Justificación de Tecnologías
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#justificacion-de-enfoques-y-patrones" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧩 Justificación de Enfoques y Patrones
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="setup-guide.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Setup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="maintanance.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Maintenance
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="our-future.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Our Future
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#autenticacion-de-usuarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔐 Autenticación de usuarios
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modelo-de-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      🗂️ Modelo de datos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estructura-del-codigo" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧱 Estructura del código
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧱 Estructura del código">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#backend" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠️ Backend
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frontend" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎨 Frontend
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tecnologias-y-herramientas" class="md-nav__link">
+    <span class="md-ellipsis">
+      💻 Tecnologías y Herramientas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💻 Tecnologías y Herramientas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#el-importer-como-tarea-desacoplada" class="md-nav__link">
+    <span class="md-ellipsis">
+      📤 El Importer como tarea desacoplada
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decisiones-de-diseno" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎨 Decisiones de diseño
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎨 Decisiones de diseño">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#justificacion-de-tecnologias" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ Justificación de Tecnologías
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#justificacion-de-enfoques-y-patrones" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧩 Justificación de Enfoques y Patrones
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+
+
+
+  
+  
+
+
+<h1 id="primeros-pasos">🚀 <strong>Primeros pasos</strong></h1>
+<h2 id="autenticacion-de-usuarios">🔐 <strong>Autenticación de usuarios</strong></h2>
+<p>En nuestra aplicación, la baja, alta y modificación de usuarios se gestiona mediante la interfaz administrativa de Django (siempre y cuando tengas las credenciales de administrador) y las distintas herramientas que proporciona, como por ejemplo, el comando de gestión <code>createsuperuser</code> que permite la creación de usuarios administradores en el sistema. Además, por necesidades al momento del desarrollo, hemos creado un pequeño comando de gestión propio llamado <code>createfakeusers</code> que permite la creación de uno o varios usuarios, con sus respectivos perfiles de la aplicación, asignando datos falsos, para la realización de pruebas futuras.</p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Command</span><span class="p">(</span><span class="n">BaseCommand</span><span class="p">):</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">help</span> <span class="o">=</span> <span class="s1">&#39;Sign up profiles with given usernames.&#39;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">add_arguments</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parser</span><span class="p">):</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>        <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;usernames&#39;</span><span class="p">,</span> <span class="n">nargs</span><span class="o">=</span><span class="s1">&#39;+&#39;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s1">&#39;List of usernames to create profiles for&#39;</span><span class="p">)</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">handle</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>        <span class="n">usernames</span> <span class="o">=</span> <span class="n">kwargs</span><span class="p">[</span><span class="s1">&#39;usernames&#39;</span><span class="p">]</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>        <span class="k">for</span> <span class="n">username</span> <span class="ow">in</span> <span class="n">usernames</span><span class="p">:</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>            <span class="n">email</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">username</span><span class="si">}</span><span class="s2">@example.com&quot;</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>            <span class="k">try</span><span class="p">:</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>                <span class="n">user</span> <span class="o">=</span> <span class="n">User</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">create_user</span><span class="p">(</span><span class="n">username</span><span class="o">=</span><span class="n">username</span><span class="p">,</span> <span class="n">email</span><span class="o">=</span><span class="n">email</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="s1">&#39;1234&#39;</span><span class="p">)</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>                <span class="n">profile</span> <span class="o">=</span> <span class="n">Profile</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">user</span><span class="o">=</span><span class="n">user</span><span class="p">)</span> 
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>                <span class="bp">self</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">SUCCESS</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Successfully created profile for </span><span class="si">{</span><span class="n">username</span><span class="si">}</span><span class="s1"> with id </span><span class="si">{</span><span class="n">profile</span><span class="o">.</span><span class="n">id</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">))</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>            <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>                <span class="bp">self</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">ERROR</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Error creating profile for </span><span class="si">{</span><span class="n">username</span><span class="si">}</span><span class="s1">: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">))</span>
+</span></code></pre></div>
+<h2 id="modelo-de-datos">🗂️ <strong>Modelo de datos</strong></h2>
+<p>La decisión de trabajar con la API de MusicBrainz y el aprendizaje sobre ellas nos ayudó a alcanzar un diseño final del modelo de datos: hemos adaptado tal diseño para que haga uso de la completa API de MusicBrainz sin complicaciones y lograr una automatización del trabajo, algo fundamental que se abarca más adelante en la documentación.</p>
+<pre class="mermaid"><code>erDiagram
+  Artist }o--o{ Album : have
+  Album }|--|{ Song : belongs
+  User ||--|| Profile : have
+  Profile }o--o{ Song : likes
+  Profile }o--o{ Album : likes
+  Profile }o--o{ Artist : likes
+  Profile ||--o{ Review : write
+  Song ||--o{ Review : have</code></pre>
+<p>La naturaleza de red social da mucho como explicación para la cantidad de relaciones que el modelo <code>Profile</code> tiene en el ecosistema de Jukabox.</p>
+<h2 id="estructura-del-codigo">🧱 <strong>Estructura del código</strong></h2>
+<h3 id="backend">🛠️ Backend</h3>
+<p>Por este lado en nuestra API, distintas <em>apps</em> han sido creadas para segmentar los diferentes modelos, vistas y serializadores que son usados en Jukabox:</p>
+<ol>
+<li><strong>Accounts</strong>: Dedicada al inicio de sesión, registro y cerrado de sesión de los usuarios así como también el comando de gestión <code>createfakeusers</code> ubicado en esta <em>app</em>.</li>
+<li><strong>Albums</strong>: Dedicada a la gestión de los álbumes.</li>
+<li><strong>Artists</strong>: Dedicada a la gestión de los artistas.</li>
+<li><strong>Songs</strong>: Dedicada a la gestión de las canciones y las <em>reviews</em>.</li>
+<li><strong>Users</strong>: Dedicada a la gestión de los perfiles y <em>likes</em>.</li>
+<li><strong>Importer</strong>: Dedicado a la importación de datos y enlaces externos.</li>
+<li><strong>Shared</strong>: Aspectos comunes de la aplicación, como el buscador del sitio web.</li>
+</ol>
+<p>Parte de las <em>apps</em> comparten similitudes con su funcionamiento, pues aplicaciones como <em>Artists</em>, <em>Albums</em> o <em>Songs</em> contienen distintas vistas que devuelven resultados rápidos para mostrar en diferentes secciones del sitio web.</p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nd">@check_method</span><span class="p">(</span><span class="s1">&#39;GET&#39;</span><span class="p">)</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">most_liked_songs</span><span class="p">(</span><span class="n">request</span><span class="p">:</span> <span class="n">HttpRequest</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">JsonResponse</span><span class="p">:</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="n">songs</span> <span class="o">=</span> <span class="n">Song</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">all</span><span class="p">()</span><span class="o">.</span><span class="n">order_by</span><span class="p">(</span><span class="s1">&#39;-likes&#39;</span><span class="p">)[:</span><span class="mi">6</span><span class="p">]</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    <span class="n">serializer</span> <span class="o">=</span> <span class="n">SongSerializer</span><span class="p">(</span><span class="n">songs</span><span class="p">,</span> <span class="n">request</span><span class="o">=</span><span class="n">request</span><span class="p">)</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    <span class="k">return</span> <span class="n">serializer</span><span class="o">.</span><span class="n">json_response</span><span class="p">()</span>
+</span></code></pre></div>
+<p>Un ejemplo sería la vista anterior, que es la encargada de devolver las seis canciones con más "me gusta".</p>
+<p>Luego tenemos otras vistas con un funcionamiento algo más complejo, como el siguiente:</p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nd">@check_method</span><span class="p">(</span><span class="s1">&#39;POST&#39;</span><span class="p">)</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nd">@check_json_body</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nd">@assert_body_fields</span><span class="p">(</span><span class="s1">&#39;artist_mbid&#39;</span><span class="p">)</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="nd">@assert_token</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="k">def</span><span class="w"> </span><span class="nf">import_artist</span><span class="p">(</span><span class="n">request</span><span class="p">:</span> <span class="n">HttpRequest</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">JsonResponse</span><span class="p">:</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    <span class="n">mbid</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;artist_mbid&#39;</span><span class="p">]</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    <span class="n">mbid_pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;^[0-9a-f]</span><span class="si">{8}</span><span class="s1">-[0-9a-f]</span><span class="si">{4}</span><span class="s1">-[0-9a-f]</span><span class="si">{4}</span><span class="s1">-[0-9a-f]</span><span class="si">{4}</span><span class="s1">-[0-9a-f]</span><span class="si">{12}</span><span class="s1">$&#39;</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>    <span class="k">if</span> <span class="ow">not</span> <span class="p">(</span><span class="n">m</span> <span class="o">:=</span> <span class="n">re</span><span class="o">.</span><span class="n">fullmatch</span><span class="p">(</span><span class="n">mbid_pattern</span><span class="p">,</span> <span class="n">mbid</span><span class="p">)):</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>        <span class="k">return</span> <span class="n">JsonResponse</span><span class="p">({</span><span class="s1">&#39;error&#39;</span><span class="p">:</span> <span class="s1">&#39;Invalid MBID&#39;</span><span class="p">},</span> <span class="n">status</span><span class="o">=</span><span class="mi">400</span><span class="p">)</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>    <span class="n">import_artist_data</span><span class="o">.</span><span class="n">delay</span><span class="p">(</span><span class="n">mbid</span><span class="p">)</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>    <span class="k">if</span> <span class="n">Artist</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">mbid</span><span class="o">=</span><span class="n">mbid</span><span class="p">):</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>        <span class="k">return</span> <span class="n">JsonResponse</span><span class="p">({</span><span class="s1">&#39;message&#39;</span><span class="p">:</span> <span class="sa">f</span><span class="s1">&#39;Updating artist data...&#39;</span><span class="p">})</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>    <span class="k">return</span> <span class="n">JsonResponse</span><span class="p">({</span><span class="s1">&#39;message&#39;</span><span class="p">:</span> <span class="sa">f</span><span class="s1">&#39;Adding artist data...&#39;</span><span class="p">})</span>
+</span></code></pre></div>
+<p>Esta es la vista principal del <em>Importer</em> en la que se puede apreciar el uso de diferentes decoradores (para un uso más eficiente de código), casa de texto con expresiones regulares y el control de errores mediante clausuras guardas.</p>
+<h3 id="frontend">🎨 Frontend</h3>
+<p>El <em>frontend</em> tiene naturaleza de <em>Single Page Application</em>, fácilmente lograda con la tecnología que ofrece Vue como framework para ello, tanto por el uso de sus librerías <code>vue-router</code> o Pinia, como por la flexibilidad que ofrece sus <em>Single File Component</em> (SFC): ficheros en su formato especial que permite encapsular la lógica, el estilo y el esqueleto de los componentes o elementos web.</p>
+<p>Por otro lado, la estructura que llevamos en el <em>frontend</em> está enfocada en el principio de <em>"Feature-based Organization"</em>, es decir, la organización y separación de los ficheros según la característica que trabaja, algo similar a la forma en la que se organizan las <em>apps</em> de <em>Django</em>. Teniendo esto en cuenta, los elementos que poseemos son:</p>
+<ol>
+<li><strong>Components</strong>: Los distintos elementos disponibles en nuestro sitio web, los cuales se clasifican según funcionalidad.<ul>
+<li><strong>Layout</strong>: Secciones comunes del sitio web como el <em>Header</em> o <em>Footer</em></li>
+<li><strong>Elements</strong>: Componentes utilizados en vistas u otros componentes específicos.</li>
+<li><strong>Elements/shared</strong>: Componentes comunes en el sitio web.</li>
+<li><strong>Classes</strong>: Interfaces de Typescript implementadas.</li>
+</ul>
+</li>
+<li><strong>Composables</strong>: Estructuras de código reutilizable, en nuestro caso, <code>useAPI.ts</code> que contiene todas las funciones necesarias para realizar peticiones de datos a la API en Django, y <code>useSocial.ts</code>, que a pesar de ser similar, tiene un cierto enfoque en las acciones realizadas por el usuario como dar <em>likes</em> o enviar una <em>review</em>.</li>
+<li><strong>Locales</strong>: Ficheros de idioma.</li>
+<li><strong>Router</strong>: Donde encontramos el código que gestiona las urls y el sistema de navegación del sitio web.</li>
+<li><strong>SCSS</strong>: Ficheros SCSS con elementos comunes como colores, utilizados en el sitio web.</li>
+<li><strong>Stores</strong>: Donde se encuentran las <em>stores</em> de Pinia, en nuestro caso, <code>useAuthStore</code>, que gestiona la autenticación del usuario.</li>
+<li><strong>Views</strong>: Y finalmente, las vistas o <em>RouterView</em>, fundamentales para el funcionamiento del sitio web y su naturaleza como <em>Single Page Application</em> (SPA).</li>
+</ol>
+<h2 id="tecnologias-y-herramientas">💻 <strong>Tecnologías y Herramientas</strong></h2>
+<p><strong>Entornos de desarrollo y herramientas:</strong>  </p>
+<ul>
+<li><strong>Visual Studio Code</strong> como editor principal con extensiones como Django, Prettier, Error Lens y snippets personalizados que nos facilitaron el trabajo otorgándonos eficiencia.  </li>
+<li><strong>Git</strong> para el control de versiones.  </li>
+<li><strong>SQLite</strong> como sistema de gestión de bases de datos, utilizado por defecto por el framework de Django.</li>
+</ul>
+<p><strong>Lenguajes:</strong>
+Se utilizaron <strong>Python</strong>, <strong>SQL</strong> y <strong>TypeScript</strong> como lenguajes de programación. Para la estructura y el diseño de la interfaz web, se emplearon <strong>HTML</strong>, <strong>CSS</strong> y <strong>SCSS</strong> como lenguajes de marcado y estilo.</p>
+<p><strong>Frameworks:</strong>
+Los principales frameworks fueron <strong>Django</strong> para el desarrollo del backend, <strong>Vue.js</strong> para el frontend, y <strong>Bootstrap</strong> para el diseño responsivo y estético de la interfaz.</p>
+<p><strong>Librerías:</strong>
+Entre las librerías destacadas se encuentran:</p>
+<ul>
+<li><strong>django-rq</strong>, para la ejecución de tareas en segundo plano (como el procesamiento de imágenes o envío de correos electrónicos).</li>
+<li><strong>vue-toast-notifications</strong>, para mostrar notificaciones emergentes al usuario.</li>
+<li><strong>vue-i18n</strong>, que facilita la internacionalización de la aplicación.</li>
+<li><strong>Pinia</strong>, como sistema de gestión de estado global en Vue.</li>
+</ul>
+<p><strong>Tecnologías complementarias:</strong>
+Se utilizó <strong>Redis</strong> como sistema de cola para la ejecución eficiente de tareas asincrónicas a través de django-rq.</p>
+<h3 id="el-importer-como-tarea-desacoplada">📤 El Importer como tarea desacoplada</h3>
+<p>Como antes había mencionado, el <strong>Importer</strong> es una de las aplicaciones y pilares fundamentales de Jukabox, es la encargada de la importación de datos de la API de MusicBrainz y de la gestión de los enlaces externos existentes. Su función algo inmensa posee multiples solicitudes de datos a la API de MusicBrainz, entre ellas, incluso, la descarga de <em>covers</em> para álbumes (si estan disponibles). Es una función que toma tiempo para realizarse, y mientras el artista a añadir tenga más contenido, mayor será el tiempo de espera que deberá tomar el usuario desde que inicie el proceso de importación hasta que finalice para seguir usando la aplicación.</p>
+<pre class="mermaid"><code>graph LR
+    A[Request artist] --&gt; B[Get artist]
+    B --&gt; C{Album available?}
+    C --&gt;|Yes| D[Get album]
+    D --&gt; E[Download cover]
+    E --&gt; F[Get songs]
+    F --&gt; C
+    C --&gt;|No| G[Save data in web]
+    G --&gt; H[I can navigate freely!]</code></pre>
+<p>Para solucionar esto decidimos diseñar dicha función como una tarea desacoplada: aprovechando de servicios como Redis y la librería Django-RQ, podemos separar al usuario de este tiempo de espera y realizar todo este procedimiento de busqueda y descarga de datos en segundo plano y permitir al usuario la navegación libre mientras todo el trabajo se está realizando.</p>
+<pre class="mermaid"><code>graph LR
+    A[Request artist] --&gt; B[Get artist]
+    A --&gt; H[I can navigate freely again!]
+    B --&gt; C{Album available?}
+    C --&gt;|Yes| D[Get album]
+    D --&gt; E[Download cover]
+    E --&gt; F[Get songs]
+    F --&gt; C
+    C --&gt;|No| G[Save data in web]
+    G --&gt;|Introduces the data in web without interrumpt the experience| H</code></pre>
+<h2 id="decisiones-de-diseno">🎨 <strong>Decisiones de diseño</strong></h2>
+<h3 id="justificacion-de-tecnologias">⚙️ Justificación de Tecnologías</h3>
+<ul>
+<li><strong>Django:</strong> Elegido por ser un framework robusto y escalable que facilita el desarrollo rápido de aplicaciones web seguras gracias a su arquitectura basada en el patrón MTV (Modelo-Template-Vista) y su enfoque en DRY (Don’t Repeat Yourself).</li>
+<li><strong>Pillow:</strong> Permite manipular imágenes de manera eficiente, lo cual es fundamental para funcionalidades como redimensionamiento, conversión de formatos, o generación de imágenes dinámicas.</li>
+<li><strong>IPython:</strong> Herramienta interactiva ideal para depuración y pruebas rápidas de funciones Python durante el desarrollo.</li>
+<li><strong>django-rq:</strong> Gestiona tareas en segundo plano mediante Redis Queue, lo cual permite mejorar la eficiencia del sistema al delegar operaciones costosas como el procesamiento de imágenes o el envío masivo de correos electrónicos.</li>
+<li><strong>Vue.js:</strong> Elegido por ser un framework progresivo, ligero y flexible que permite construir interfaces de usuario reactivas mediante una arquitectura basada en componentes. Facilita el desarrollo modular y escalable de aplicaciones web.</li>
+<li><strong>Pinia:</strong> Seleccionado como sistema de gestión de estado oficial de Vue.js por su simplicidad, integración nativa con Composition API y compatibilidad con TypeScript. Mejora la organización del estado global y su trazabilidad durante el desarrollo.</li>
+<li><strong>vue-toast-notifications:</strong> Utilizado para mostrar notificaciones emergentes de manera clara y no intrusiva, permitiendo una retroalimentación inmediata al usuario sobre acciones realizadas, como operaciones exitosas o errores.</li>
+<li><strong>ESLint:</strong> Implementado como herramienta de análisis de código para garantizar buenas prácticas de programación, detectar errores potenciales y mantener un estilo de código limpio y coherente en todo el proyecto.</li>
+<li><strong>Bootstrap:</strong> Incorporado como framework de diseño CSS para agilizar la creación de interfaces responsivas y estéticamente consistentes, reduciendo tiempos de desarrollo gracias a su sistema de grillas y componentes reutilizables.</li>
+<li><strong>vue-i18n:</strong> Adoptado para la internacionalización de la aplicación, permitiendo la adaptación del contenido a múltiples idiomas de forma sencilla y dinámica, y mejorando así la accesibilidad a usuarios de distintos contextos lingüísticos.</li>
+</ul>
+<h3 id="justificacion-de-enfoques-y-patrones">🧩 Justificación de Enfoques y Patrones</h3>
+<ul>
+<li><strong>Arquitectura basada en componentes:</strong> Modularizar la aplicación en componentes reutilizables y en apps independientes dentro de Django favorece la escalabilidad, mantenibilidad y facilita el trabajo colaborativo al aislar funcionalidades específicas.</li>
+<li><strong>Modularidad mediante apps:</strong> Dividir el proyecto en apps independientes permite un desarrollo más organizado y escalable, facilitando el mantenimiento y la colaboración.</li>
+<li><strong>Gestión de tareas en segundo plano:</strong> El uso de django-rq permite delegar procesos intensivos (como procesamiento de imágenes o envíos de correos masivos) fuera del flujo principal, mejorando la eficiencia y experiencia del usuario.</li>
+<li><strong>Optimización y manejo eficiente de recursos:</strong> Utilización de Pillow para el procesamiento y compresión de imágenes, reduciendo carga en el frontend y mejorando el rendimiento.</li>
+<li><strong>Arquitectura basada en componentes:</strong> Vue.js estructura la interfaz en componentes reutilizables y encapsulados que facilitan la escalabilidad y mantenibilidad de la aplicación.</li>
+<li><strong>Gestión de estado centralizada con Pinia:</strong> Permite controlar el estado global de la aplicación de forma predecible y reactiva, mejorando la organización del código y facilitando la depuración.</li>
+<li><strong>Internacionalización con vue-i18n:</strong> Implementa un patrón para separar los textos del código lógico, facilitando la traducción y soporte multilingüe sin afectar la estructura.</li>
+<li><strong>Notificaciones emergentes con vue-toast-notifications:</strong> Mejora la experiencia del usuario mediante feedback inmediato y no intrusivo ante acciones importantes.</li>
+<li><strong>Diseño responsive con Bootstrap:</strong> Asegura que la interfaz se adapte correctamente a distintos dispositivos, garantizando accesibilidad y usabilidad.</li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.instant.progress", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "search.share", "content.code.annotate", "content.code.copy"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  </body>
+</html>

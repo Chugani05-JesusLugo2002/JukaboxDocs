@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>Noneindex.html</loc>
+        <lastmod>2025-05-22</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneindex.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="Nonees/index.html"/>
+    </url>
+    <url>
+        <loc>Nonegetting-started.html</loc>
+        <lastmod>2025-05-22</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonegetting-started.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="Nonees/getting-started.html"/>
+    </url>
+    <url>
+        <loc>Nonemaintanance.html</loc>
+        <lastmod>2025-05-22</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonemaintanance.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="Nonees/maintanance.html"/>
+    </url>
+    <url>
+        <loc>Noneour-future.html</loc>
+        <lastmod>2025-05-22</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneour-future.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="Nonees/our-future.html"/>
+    </url>
+    <url>
+        <loc>Nonesetup-guide.html</loc>
+        <lastmod>2025-05-22</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonesetup-guide.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="Nonees/setup-guide.html"/>
+    </url>
+    <url>
+        <loc>Nonees/index.html</loc>
+        <lastmod>2025-05-22</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="Nonees/index.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneindex.html"/>
+    </url>
+    <url>
+        <loc>Nonees/getting-started.html</loc>
+        <lastmod>2025-05-22</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="Nonees/getting-started.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonegetting-started.html"/>
+    </url>
+    <url>
+        <loc>Nonees/maintanance.html</loc>
+        <lastmod>2025-05-22</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="Nonees/maintanance.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonemaintanance.html"/>
+    </url>
+    <url>
+        <loc>Nonees/our-future.html</loc>
+        <lastmod>2025-05-22</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="Nonees/our-future.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneour-future.html"/>
+    </url>
+    <url>
+        <loc>Nonees/setup-guide.html</loc>
+        <lastmod>2025-05-22</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="Nonees/setup-guide.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonesetup-guide.html"/>
+    </url>
+</urlset>
