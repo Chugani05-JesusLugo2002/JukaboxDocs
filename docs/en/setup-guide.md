@@ -3,7 +3,7 @@ hide:
   - navigation
 ---
 
-# **Setup**
+# 📘 **Setup**
 
 ## 🔧 **Installation instructions**
 

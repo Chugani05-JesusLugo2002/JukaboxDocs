@@ -5,9 +5,111 @@ hide:
 
 # 🚀 **Getting started**
 
-## **Data Model**
+## 🔐 **User Authentication**
 
-## **Code Structure**
+In our application, user deletion, creation, and modification are managed through Django’s admin interface (as long as you have administrator credentials) and the various tools it provides, such as the `createsuperuser` management command, which allows the creation of admin users in the system. Additionally, for development needs, we have created a small custom management command called `createfakeusers`, which allows the creation of one or several users with their corresponding application profiles, assigning fake data for future testing purposes.
+
+```py
+class Command(BaseCommand):
+    help = 'Sign up profiles with given usernames.'
+
+    def add_arguments(self, parser):
+        parser.add_argument('usernames', nargs='+', help='List of usernames to create profiles for')
+        
+    def handle(self, *args, **kwargs):
+        usernames = kwargs['usernames']
+        for username in usernames:
+            email = f"{username}@example.com"
+            try:
+                user = User.objects.create_user(username=username, email=email, password='1234')
+                profile = Profile.objects.create(user=user) 
+                self.stdout.write(self.style.SUCCESS(f'Successfully created profile for {username} with id {profile.id}'))
+            except Exception as e:
+                self.stdout.write(self.style.ERROR(f'Error creating profile for {username}: {e}'))
+```
+
+## 🗂️ **Data Model**
+
+The decision to work with the MusicBrainz API and learning about it helped us reach a final design for the data model: we adapted the design to make full use of the MusicBrainz API effortlessly and achieve automation of the work, something fundamental that is covered later in the documentation.
+
+```mermaid
+erDiagram
+  Artist }o--o{ Album : have
+  Album }|--|{ Song : belongs
+  User ||--|| Profile : have
+  Profile }o--o{ Song : likes
+  Profile }o--o{ Album : likes
+  Profile }o--o{ Artist : likes
+  Profile ||--o{ Review : write
+  Song ||--o{ Review : have
+```
+
+The social network nature explains the number of relationships the `Profile` model has within the Jukabox ecosystem.
+
+## 🧱 **Code Structure**
+
+### 🛠️ Backend
+
+On this side of our API, different *apps* were created to segment the various models, views, and serializers used in Jukabox:
+
+1. **Accounts**: Handles user login, registration, and logout, as well as the `createfakeusers` management command found in this *app*.
+2. **Albums**: Handles album management.
+3. **Artists**: Handles artist management.
+4. **Songs**: Handles song and *review* management.
+5. **Users**: Handles profile and *likes* management.
+6. **Importer**: Handles data importing and external links.
+7. **Shared**: Common aspects of the application, such as the site search bar.
+
+Some *apps* share functional similarities; for example, apps like *Artists*, *Albums*, or *Songs* contain various views that return quick results for different sections of the website.
+
+```py
+@check_method('GET')
+def most_liked_songs(request: HttpRequest) -> JsonResponse:
+    songs = Song.objects.all().order_by('-likes')[:6]
+    serializer = SongSerializer(songs, request=request)
+    return serializer.json_response()
+```
+
+An example is the view above, which returns the six most liked songs.
+
+Then we have other views with slightly more complex functionality, like the following:
+
+```py
+@check_method('POST')
+@check_json_body
+@assert_body_fields('artist_mbid')
+@assert_token
+def import_artist(request: HttpRequest) -> JsonResponse:
+    mbid = request.data['artist_mbid']
+    mbid_pattern = r'^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$'
+    if not (m := re.fullmatch(mbid_pattern, mbid)):
+        return JsonResponse({'error': 'Invalid MBID'}, status=400)
+    import_artist_data.delay(mbid)
+    if Artist.objects.get(mbid=mbid):
+        return JsonResponse({'message': f'Updating artist data...'})
+    return JsonResponse({'message': f'Adding artist data...'})
+```
+
+This is the main view of the *Importer*, where you can see the use of different decorators (for more efficient code), regex pattern matching, and error handling using guard clauses.
+
+### 🎨 Frontend
+
+The *frontend* is a *Single Page Application* by nature, easily achieved with Vue's technology as a framework, both due to the use of its libraries `vue-router` and Pinia, and the flexibility offered by its *Single File Components* (SFC): special format files that allow encapsulating logic, style, and the structure of components or web elements.
+
+On the other hand, the structure we follow on the *frontend* is focused on the principle of *"Feature-based Organization"*, meaning that the files are organized and separated based on the feature they work on—something similar to how *Django* apps are structured. With that in mind, the elements we have are:
+
+1. **Components**: The various elements available on our website, classified according to functionality.
+
+   * **Layout**: Common sections of the website such as the *Header* or *Footer*
+   * **Elements**: Components used in views or other specific components.
+   * **Elements/shared**: Common components across the website.
+   * **Classes**: Implemented Typescript interfaces.
+2. **Composables**: Reusable code structures; in our case, `useAPI.ts`, which contains all necessary functions to make API requests to Django, and `useSocial.ts`, which, although similar, is more focused on user actions such as giving *likes* or sending a *review*.
+3. **Locales**: Language files.
+4. **Router**: Where the code that manages URLs and the site's navigation system is located.
+5. **SCSS**: SCSS files with common elements like colors used throughout the website.
+6. **Stores**: Where the Pinia *stores* are located; in our case, `useAuthStore`, which manages user authentication.
+7. **Views**: And finally, the views or *RouterView*, essential for the website’s functionality and its nature as a *Single Page Application* (SPA).
 
 
 ## 💻 **Technologies and Tools**

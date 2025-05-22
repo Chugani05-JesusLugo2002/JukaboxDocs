@@ -3,7 +3,7 @@ hide:
   - navigation
 ---
 
-# **Guía de configuración**
+# 📘 **Guía de configuración**
 
 ## 🔧 **Instrucciones de instalación**
 

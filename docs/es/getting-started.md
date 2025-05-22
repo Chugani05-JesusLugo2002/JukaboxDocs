@@ -5,7 +5,7 @@ hide:
 
 # 🚀 **Primeros pasos**
 
-## **Autenticación de usuarios**
+## 🔐 **Autenticación de usuarios**
 
 En nuestra aplicación, la baja, alta y modificación de usuarios se gestiona mediante la interfaz administrativa de Django (siempre y cuando tengas las credenciales de administrador) y las distintas herramientas que proporciona, como por ejemplo, el comando de gestión `createsuperuser` que permite la creación de usuarios administradores en el sistema. Además, por necesidades al momento del desarrollo, hemos creado un pequeño comando de gestión propio llamado `createfakeusers` que permite la creación de uno o varios usuarios, con sus respectivos perfiles de la aplicación, asignando datos falsos, para la realización de pruebas futuras.
 
@@ -28,7 +28,7 @@ class Command(BaseCommand):
                 self.stdout.write(self.style.ERROR(f'Error creating profile for {username}: {e}'))
 ```
 
-## **Modelo de datos**
+## 🗂️ **Modelo de datos**
 
 La decisión de trabajar con la API de MusicBrainz y el aprendizaje sobre ellas nos ayudó a alcanzar un diseño final del modelo de datos: hemos adaptado tal diseño para que haga uso de la completa API de MusicBrainz sin complicaciones y lograr una automatización del trabajo, algo fundamental que se abarca más adelante en la documentación.
 
@@ -46,9 +46,9 @@ erDiagram
 
 La naturaleza de red social da mucho como explicación para la cantidad de relaciones que el modelo `Profile` tiene en el ecosistema de Jukabox.
 
-## **Estructura del código**
+## 🧱 **Estructura del código**
 
-### Backend
+### 🛠️ Backend
 
 Por este lado en nuestra API, distintas *apps* han sido creadas para segmentar los diferentes modelos, vistas y serializadores que son usados en Jukabox:
 
@@ -92,7 +92,7 @@ def import_artist(request: HttpRequest) -> JsonResponse:
 
 Esta es la vista principal del *Importer* en la que se puede apreciar el uso de diferentes decoradores (para un uso más eficiente de código), casa de texto con expresiones regulares y el control de errores mediante clausuras guardas.
 
-### Frontend
+### 🎨 Frontend
 
 El *frontend* tiene naturaleza de *Single Page Application*, fácilmente lograda con la tecnología que ofrece Vue como framework para ello, tanto por el uso de sus librerías `vue-router` o Pinia, como por la flexibilidad que ofrece sus *Single File Component* (SFC): ficheros en su formato especial que permite encapsular la lógica, el estilo y el esqueleto de los componentes o elementos web.
 
@@ -113,6 +113,12 @@ Por otro lado, la estructura que llevamos en el *frontend* está enfocada en el 
 
 ## 💻 **Tecnologías y Herramientas**
 
+**Entornos de desarrollo y herramientas:**  
+
+- **Visual Studio Code** como editor principal con extensiones como Django, Prettier, Error Lens y snippets personalizados que nos facilitaron el trabajo otorgándonos eficiencia.  
+- **Git** para el control de versiones.  
+- **SQLite** como sistema de gestión de bases de datos, utilizado por defecto por el framework de Django.
+
 **Lenguajes:**
 Se utilizaron **Python**, **SQL** y **TypeScript** como lenguajes de programación. Para la estructura y el diseño de la interfaz web, se emplearon **HTML**, **CSS** y **SCSS** como lenguajes de marcado y estilo.
 
@@ -130,15 +136,7 @@ Entre las librerías destacadas se encuentran:
 **Tecnologías complementarias:**
 Se utilizó **Redis** como sistema de cola para la ejecución eficiente de tareas asincrónicas a través de django-rq.
 
-**El Importer como tarea desacoplada**
-
-**Entornos de desarrollo y herramientas:**  
-
-- **Visual Studio Code** como editor principal con extensiones como Django, Prettier, Error Lens y snippets personalizados que nos facilitaron el trabajo otorgándonos eficiencia.  
-- **Git** para el control de versiones.  
-- **SQLite** como sistema de gestión de bases de datos, utilizado por defecto por el framework de Django.
-
-
+### El Importer como tarea desacoplada
 
 
 ## 🎨 **Decisiones de diseño**
