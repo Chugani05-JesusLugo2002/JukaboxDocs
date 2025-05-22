@@ -1,4 +1,5 @@
 site_name: JukaboxDocs
+site_url: https://chugani05-jesuslugo2002.github.io/JukaboxDocs/
 
 nav:
   - Home: index.md
