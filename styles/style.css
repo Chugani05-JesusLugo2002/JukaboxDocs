@@ -5,13 +5,11 @@
   width: 175vh;
   padding: 5rem;
   text-align: center;
-  color: white;
 }
 
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 0.5rem;
-  color: white;
 }
 
 .hero .tagline {
