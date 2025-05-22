@@ -36,7 +36,6 @@ Technical support will be available to resolve any issues related to the website
 The process for performing updates and maintenance will be as follows:
 
 * **Planning:** Major updates will be announced at least **1 week in advance**.
-* **Testing:** Before implementing critical or major updates, tests will be conducted in a development or staging environment to ensure no other system functionalities are affected.
 * **Implementation:** Updates will be implemented during **predefined maintenance windows** that will be communicated to users in advance.
 * **Post-update Monitoring:** After the update, intensive monitoring will be performed to detect any potential issues.
 
@@ -77,10 +76,6 @@ Here is the English translation of your changelog:
 **Improvements:**
 
 * Optimized stability and performance to ensure a smooth user experience.
-
-**Fixes:**
-
-* Initial tests implemented to ensure application quality and reliability.
 
 **Notes:**
 

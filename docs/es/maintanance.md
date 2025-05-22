@@ -73,10 +73,6 @@ Nos comprometemos a una mejora continua en la calidad de nuestras actualizacione
 
 - Estabilidad y rendimiento optimizados para garantizar una experiencia de usuario fluida.
 
-**Correcciones:**
-
-- Se implementaron pruebas iniciales para garantizar la calidad y confiabilidad de la aplicación.
-
 **Notas:**
 
 - Se trata de la **primera versión estable** del producto. Continuaremos mejorando y añadiendo nuevas características en futuras actualizaciones.
